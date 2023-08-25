@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While and Do While</title>
+</head>
+<body>
+    <script>
+        function count()
+        {
+            
+            /*
+            // while whatever is in the parenthesis is "true" this will keep looping
+            
+            var x = 0;
+            while(x < 101) // while x is less than 101
+            {
+                document.getElementById("output").innerHTML += (x + "<br\>"); // Outputting the value of x to the output field below 
+                
+                x++; // incrementing x (+) 1 each time through the loop until it reaches 102 then the while loop will stop
+            }
+            */
+           
+            // Counting down from 100 a loop will happen until 100 > -1
+            var i = 100;
+            do 
+            {
+                document.getElementById('output').innerHTML += (i + "<br/>");
+                i--;
+                
+            }while(i > -1);
+        }
+    </script>
+    <p id="output"></p>
+    <button onclick="count()">Count</button>
+</body>
+</html>
